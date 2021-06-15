@@ -10,7 +10,7 @@ class CategoriesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'shivMeal',
+          'shivaMeal',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
