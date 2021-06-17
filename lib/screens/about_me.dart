@@ -93,6 +93,42 @@ class Aboutme extends StatelessWidget {
                     )
                   ],
                 ),
+                SizedBox(height: 30.0),
+                Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.call,
+                      color: Colors.yellow[400],
+                    ),
+                    SizedBox(width: 10.0),
+                    Text(
+                      '8299539414',
+                      style: TextStyle(
+                        color: Colors.grey[400],
+                        fontSize: 18.0,
+                        letterSpacing: 1.0,
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(height: 30.0),
+                Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.inbox,
+                      color: Colors.yellow[400],
+                    ),
+                    SizedBox(width: 10.0),
+                    Text(
+                      'youthoober shiva',
+                      style: TextStyle(
+                        color: Colors.grey[400],
+                        fontSize: 18.0,
+                        letterSpacing: 1.0,
+                      ),
+                    )
+                  ],
+                ),
               ],
             ),
           ],
