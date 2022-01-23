@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import '../dummy_data.dart';
 
 class MealDetailScreen extends StatelessWidget {
+  final Function toggleFavorites;
+  final Function isfav;
+  MealDetailScreen(this.toggleFavorites, this.isfav);
   static const routeName = '/meal-detail';
 
   Widget buildSectionTitle(BuildContext context, String text) {
@@ -10,7 +13,7 @@ class MealDetailScreen extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 10),
       child: Text(
         text,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.bodyText1,
       ),
     );
   }
@@ -24,7 +27,7 @@ class MealDetailScreen extends StatelessWidget {
       ),
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(10),
-      height: 150,
+      height: 250,
       width: 300,
       child: child,
     );
@@ -85,6 +88,12 @@ class MealDetailScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          toggleFavorites(mealId);
+        },
+        child: Icon(isfav(mealId) ? Icons.star : Icons.star_border),
       ),
     );
   }

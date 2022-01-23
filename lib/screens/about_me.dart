@@ -67,7 +67,7 @@ class Aboutme extends StatelessWidget {
                 ),
                 SizedBox(height: 10.0),
                 Text(
-                  'FIRST YEAR',
+                  'SECOND YEAR',
                   style: TextStyle(
                     color: Colors.yellow,
                     fontWeight: FontWeight.bold,
@@ -83,12 +83,14 @@ class Aboutme extends StatelessWidget {
                       color: Colors.yellow[400],
                     ),
                     SizedBox(width: 10.0),
-                    Text(
-                      'shiva.2024cs1129@kiet.edu',
-                      style: TextStyle(
-                        color: Colors.grey[400],
-                        fontSize: 18.0,
-                        letterSpacing: 1.0,
+                    FittedBox(
+                      child: Text(
+                        'shiva.2024cs1129@kiet.edu',
+                        style: TextStyle(
+                          color: Colors.grey[400],
+                          fontSize: 15.0,
+                          letterSpacing: 1.0,
+                        ),
                       ),
                     )
                   ],
